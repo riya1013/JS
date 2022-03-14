@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Event Listeners </title>
+</head>
+<body>
+    <button id="myButton">Click here</button>
+ 
+    <script>
+    // Selecting button element
+    var btn = document.getElementById("myButton");
+     
+    // Defining custom functions
+    function hello() {
+        alert("Hi, how are you?");
+    }
+     
+    function setHoverColor() {
+        btn.style.background = "green";
+    }
+     
+    function setNormalColor() {
+        btn.style.background = "";
+    }
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", hello);
+    btn.addEventListener("mouseover", setHoverColor);
+    btn.addEventListener("mouseout", setNormalColor);
+    </script>
+</body>
+</html>

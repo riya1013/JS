@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script>  
+function myFunction()  
+{  
+var x = 5; 
+function innerfunction() 
+{  
+return x;  
+}  
+return innerfunction;  
+}  
+var output = myFunction();  
+document.write(output());  
+document.write(" ");  
+document.write(output());  
+</script>  
+</head>  
+<body>  
+</body>  
+</html> 
